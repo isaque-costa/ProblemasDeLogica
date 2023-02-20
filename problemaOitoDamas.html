@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+   <head>
+      <title>Problema das damas</title>
+	  <meta charset="utf-8">
+      <link rel="stylesheet" href="estilo.css">
+      <link	rel="icon" href="dama.bmp">
+      <script type="text/javascript" src="problemaOitoDamas.js"></script>
+   </head>
+   <body onLoad="montaTabuleiro();">
+      <h1>PROBLEMA DAS DAMAS</h1>
+      <p> <strong> Objetivo: </strong> posicionar as peças no tabuleiro de forma que duas não ocupem a mesma linha, coluna ou diagonal.</p>
+      <br>
+      <p> Escolha a quantidade de damas: 
+		<select id="qtd_damas" onChange="montaTabuleiro();">
+		  <option value="4">  Quatro </option>
+		  <option value="5">  Cinco  </option>
+		  <option value="6">  Seis   </option>
+		  <option value="7">  Sete   </option>
+		  <option value="8">  Oito   </option>
+		  <option value="9">  Nove   </option>
+		  <option value="10"> Dez    </option>
+		</select>
+	  </p> <br> 
+	  <div id="mensagem"> </div> <br>
+	  <div id="tabuleiro"> </div> <br> 
+      <button onClick="reiniciaTabuleiro();"> Limpar </button>
+      <button id="btnResolver" onClick="resolve();"> Resolver </button>
+   </body>
+</html>
